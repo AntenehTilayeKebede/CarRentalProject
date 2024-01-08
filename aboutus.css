@@ -1,0 +1,624 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800,900,300i,400i,500i,600i,700i,800i,900i&display=swap");
+* {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  font-family: Rubik, sans-serif;
+}
+
+.relative {
+  position: relative;
+}
+
+body {
+  line-height: inherit;
+  margin: 0;
+  background: #f8f8f8;
+  background: var(--body-color);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-variation-settings: normal;
+  line-height: 1.5;
+  tab-size: 4;
+}
+
+:root {
+  --body-color: #f8f8f8;
+  --primary-color: #ff4d30;
+  --bg-text-color: #000;
+  --white-text-color: #fff;
+  --primary-shadow: rgba(255, 83, 48, 0.35) 0px 10px 15px 0px;
+  --btn-radius: 3px;
+  --hover-color: #ff381a;
+  --hover-shadow: rgba(255, 83, 48, 0.7) 0px 10px 15px 0px;
+}
+
+.max-w-\[1920px\] {
+  max-width: 1920px;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  max-width: 133rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 0.8rem;
+  width: 100%;
+  z-index: 100;
+}
+
+*,
+:after,
+:before {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+/* a:hover {
+  color: #ff381a;
+} */
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Nav-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.openNav {
+  display: none;
+}
+
+.nav-btns {
+  display: flex;
+  gap: 0.7rem;
+}
+
+img {
+  display: block;
+  vertical-align: middle;
+  height: auto;
+  max-width: 100%;
+}
+
+.logo {
+  width: 9rem;
+}
+
+ul .nav-btns {
+  display: none;
+}
+
+svg {
+  display: block;
+  vertical-align: middle;
+}
+
+button {
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  -webkit-appearance: button;
+  background-color: initial;
+  background-image: none;
+  cursor: pointer;
+}
+
+.nav-btns .nav-btn {
+  font-size: 1.05rem;
+  font-weight: 500;
+  padding: 0.8rem 2rem;
+}
+
+.nav-btns .nav-btn.register {
+  background: var(--primary-color);
+  border-radius: var(--btn-radius);
+  box-shadow: var(--primary-shadow);
+  color: var(--white-text-color);
+  transition: 2s;
+}
+.nav-btns .nav-btn {
+  background: var(--primary-color);
+  border-radius: var(--btn-radius);
+  box-shadow: var(--primary-shadow);
+  color: var(--white-text-color);
+  transition: 2s;
+}
+
+.nav-btns .nav-btn.register:hover {
+  background: var(--hover-color);
+  box-shadow: var(--hover-shadow);
+}
+
+.Nav-menu a {
+  color: var(--bg-text-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.Nav-menu a:hover {
+  color: var(--primary-color);
+}
+.heroimage-sec {
+  height: 40vh;
+  width: 100%;
+  padding-bottom: 0px;
+}
+
+*,
+:after,
+:before {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+.heroimage-con:after {
+  background-image: url(https://carsrental.vercel.app/static/media/HeroTopImg.71ab9a13d73de3860763.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  height: 60%;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+}
+
+.breadcrumb {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 3%;
+  width: 90%;
+}
+
+h2 {
+  font-size: var(--h4-size);
+  font-weight: 700;
+  margin: 0;
+  color: var(--bg-text-color);
+  margin-bottom: -1rem;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+
+.breadcrumb h2 {
+  font-size: xx-large;
+}
+
+h4 {
+  font-size: var(--h4-size);
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 0.7rem;
+  color: var(--bg-text-color);
+}
+
+.breadcrumb h4 {
+  color: var(--big-text-color);
+  font-size: var(--p-size);
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800,900,300i,400i,500i,600i,700i,800i,900i&display=swap");
+* {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  font-family: Rubik, sans-serif;
+}
+
+.relative {
+  position: relative;
+}
+
+body {
+  line-height: inherit;
+  margin: 0;
+  background: #f8f8f8;
+  background: var(--body-color);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-variation-settings: normal;
+  line-height: 1.5;
+  tab-size: 4;
+}
+
+:root {
+  --body-color: #f8f8f8;
+  --primary-color: #ff4d30;
+  --bg-text-color: #000;
+  --small-text-color: #706f7b;
+  --btn-radius: 3px;
+  --hover-color: #ff381a;
+  --hover-shadow: rgba(255, 83, 48, 0.7) 0px 10px 15px 0px;
+  --h3-size: 2.4rem;
+  --h4-size: 1.4rem;
+  --p-size: 1rem;
+}
+
+.chooseUs-section {
+  background-image: url(https://carsrental.vercel.app/static/media/wcubg.82b3bf0dc76cd35f3da0.png);
+  background-position: 50%;
+  background-size: cover;
+  height: auto;
+  margin: auto;
+  width: 100%;
+}
+
+*,
+:after,
+:before {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+.wcu-container {
+  background: transparent;
+  margin: auto;
+  width: 90%;
+}
+
+.choose-us-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.wcu-flex {
+  display: flex;
+  padding-top: 2rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+img {
+  display: block;
+  vertical-align: middle;
+  height: auto;
+  max-width: 100%;
+}
+
+.left {
+  width: 40%;
+}
+
+.right {
+  display: flex;
+  width: 43%;
+  flex-direction: column;
+}
+
+h4 {
+  font-size: var(--h4-size);
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 0.7rem;
+  color: var(--bg-text-color);
+}
+
+.left h4 {
+  padding-bottom: 1rem;
+  text-align: left;
+}
+
+h2 {
+  font-size: var(--h4-size);
+  font-weight: 700;
+  margin: 0;
+  color: var(--bg-text-color);
+  margin-bottom: -1rem;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+
+.left h2 {
+  font-size: var(--h3-size);
+  width: 90%;
+}
+
+p {
+  margin: 0;
+  color: var(--small-text-color);
+  font-size: var(--p-size);
+  font-weight: 400;
+  padding: 1.5rem 0;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+
+button {
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  -webkit-appearance: button;
+  background-color: initial;
+  background-image: none;
+  cursor: pointer;
+}
+
+.wcu-btn {
+  align-items: center;
+  background: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: var(--btn-radius);
+  box-shadow: var(--hover-shadow);
+  color: #fff;
+  display: flex;
+  font-size: 1.1rem;
+  font-weight: 700;
+  gap: 0.7rem;
+  justify-content: center;
+  padding: 0.8rem 2.2rem;
+}
+
+.wcu-btn:hover {
+  background: var(--hover-color);
+  transition: 0.2s;
+}
+
+.right .wcu-box {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.right .wcu-box img {
+  height: 7rem;
+  width: 7rem;
+}
+
+h3 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+.right .wcu-box h3 {
+  font-size: var(--h4-size);
+  font-weight: 700;
+}
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800,900,300i,400i,500i,600i,700i,800i,900i&display=swap");
+* {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  font-family: Rubik, sans-serif;
+}
+
+body {
+  line-height: inherit;
+  margin: 0;
+  background: #f8f8f8;
+  background: var(--body-color);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-variation-settings: normal;
+  line-height: 1.5;
+  tab-size: 4;
+}
+
+:root {
+  --body-color: #f8f8f8;
+  --primary-color: #ff4d30;
+  --small-text-color: #706f7b;
+  --p-size: 1rem;
+  --initial-bg: #e9e9e9;
+  --h4-size: 1.4rem;
+}
+
+.footer-section {
+  background: #fff;
+  padding-top: 5rem;
+  width: 100%;
+}
+
+*,
+:after,
+:before {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+.footer-con {
+  align-items: center;
+  display: grid;
+  justify-items: end;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: auto;
+  padding-bottom: 5rem;
+  width: 90%;
+}
+
+.fb-2 {
+  padding-left: 2rem;
+}
+
+h3 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+.footer-box h3 {
+  font-size: var(--h4-size);
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+  color: var(--small-text-color);
+  font-size: var(--p-size);
+  font-weight: 400;
+  padding: 1.5rem 0;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+
+.footer-box.footer-box.fb-1 p {
+  max-width: 90%;
+}
+
+.fb-1 .span-flex {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer-box.footer-box.fb-1 span {
+  font-weight: 400;
+}
+
+.sf-2 {
+  margin-top: -2rem;
+}
+
+small {
+  font-size: 80%;
+}
+
+.footer-box.footer-box.fb-1 small {
+  color: var(--big-text-color);
+  font-size: 1rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fb-3 p {
+  color: var(--big-text-color);
+}
+
+.fb-4 p {
+  color: var(--big-text-color);
+}
+
+input {
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.fb-4 input {
+  background: none repeat 0 0 / auto auto padding-box border-box scroll-bg;
+  background: var();
+  background: var(--initial-bg);
+  outline: none;
+  padding: 0.8rem;
+  width: 90%;
+}
+
+button {
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  -webkit-appearance: button;
+  background-color: initial;
+  background-image: none;
+  cursor: pointer;
+}
+
+.fb-4 .sub-btn {
+  background: var(--primary-color);
+  color: #fff;
+  font-size: var(--h4-size);
+  font-weight: 500;
+  margin-top: 0.6rem;
+  padding: 0.8rem;
+  width: 90%;
+}
+
+svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.fb-1 .span-flex p {
+  color: var(--big-text-color);
+  font-weight: 500;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.fb-2 a {
+  line-height: 2.7rem;
+}
+
+/* a:hover {
+  color: var(--primary-color);
+} */
+
+.fb-2 a:hover {
+  color: var(--primary-color);
+}

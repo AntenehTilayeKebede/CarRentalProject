@@ -1,0 +1,554 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800,900,300i,400i,500i,600i,700i,800i,900i&display=swap");
+* {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  font-family: Rubik, sans-serif;
+}
+
+body {
+  line-height: inherit;
+  margin: 0;
+  background: #f8f8f8;
+  background: var(--body-color);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-variation-settings: normal;
+  line-height: 1.5;
+  tab-size: 4;
+}
+
+:root {
+  --body-color: #f8f8f8;
+  --primary-color: #ff4d30;
+  --bg-text-color: #000;
+  --white-text-color: #fff;
+  --primary-shadow: rgba(255, 83, 48, 0.35) 0px 10px 15px 0px;
+  --btn-radius: 3px;
+  --hover-color: #ff381a;
+  --hover-shadow: rgba(255, 83, 48, 0.7) 0px 10px 15px 0px;
+}
+
+.max-w-\[1920px\] {
+  max-width: 1920px;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  max-width: 133rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 0.8rem;
+  width: 100%;
+  z-index: 100;
+}
+
+*,
+:after,
+:before {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Nav-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.openNav {
+  display: none;
+}
+
+.nav-btns {
+  display: flex;
+  gap: 0.7rem;
+}
+
+img {
+  display: block;
+  vertical-align: middle;
+  height: auto;
+  max-width: 100%;
+}
+
+.logo {
+  width: 9rem;
+}
+
+ul .nav-btns {
+  display: none;
+}
+
+svg {
+  display: block;
+  vertical-align: middle;
+}
+
+button {
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  -webkit-appearance: button;
+  background-color: initial;
+  background-image: none;
+  cursor: pointer;
+}
+
+.nav-btns .nav-btn {
+  font-size: 1.05rem;
+  font-weight: 500;
+  padding: 0.8rem 2rem;
+}
+
+/* .nav-btns .nav-btn.sign-in:hover {
+  color: var(--primary-color);
+  transition: 0.2s;
+} */
+
+.nav-btns .nav-btn.register {
+  background: var(--primary-color);
+  border-radius: var(--btn-radius);
+  box-shadow: var(--primary-shadow);
+  color: var(--white-text-color);
+  transition: 2s;
+}
+.nav-btns .nav-btn {
+  background: var(--primary-color);
+  border-radius: var(--btn-radius);
+  box-shadow: var(--primary-shadow);
+  color: var(--white-text-color);
+  transition: 2s;
+}
+.nav-btns .nav-btn.register:hover {
+  background: var(--hover-color);
+  box-shadow: var(--hover-shadow);
+}
+
+.Nav-menu a {
+  color: var(--bg-text-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.Nav-menu a:hover {
+  color: var(--primary-color);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800,900,300i,400i,500i,600i,700i,800i,900i&display=swap");
+body {
+  /* CSS Variables that may have been missed get put on body */
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgba(0, 0, 0, 0.03))
+    drop-shadow(0 8px 5px rgba(0, 0, 0, 0.08));
+}
+
+* {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  font-family: Rubik, sans-serif;
+}
+
+.relative {
+  position: relative;
+}
+
+body {
+  line-height: inherit;
+  margin: 0;
+  background: #f8f8f8;
+  background: var(--body-color);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-variation-settings: normal;
+  line-height: 1.5;
+  tab-size: 4;
+}
+
+:root {
+  --body-color: #f8f8f8;
+  --primary-color: #ff4d30;
+  --white-text-color: #fff;
+  --border-color: #ababab;
+  --btn-radius: 3px;
+}
+
+.max-w-\[1920px\] {
+  max-width: 1920px;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  max-width: 133rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 0.8rem;
+  width: 100%;
+  z-index: 100;
+}
+
+*,
+:after,
+:before {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+img {
+  display: block;
+  vertical-align: middle;
+  height: auto;
+  max-width: 100%;
+}
+
+.logo {
+  width: 9rem;
+}
+
+.booking-phase {
+  margin: auto;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  width: 90%;
+}
+
+.booking-card {
+  margin: auto;
+  margin-top: 7%;
+  margin-bottom: 7%;
+
+  background-image: url(https://carsrental.vercel.app/static/media/book-bg.6f629a1041e9fd9c6685.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  max-width: ;
+  width: 70%;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+}
+
+.drop-shadow-xl {
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgba(0, 0, 0, 0.03))
+    drop-shadow(0 8px 5px rgba(0, 0, 0, 0.08));
+  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.booking-section {
+  background: #fff;
+  border-radius: 8px;
+  margin: auto;
+  width: 90%;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.form-phase {
+  display: flex;
+  gap: 2rem;
+  width: 32%;
+  flex-direction: column;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input label {
+  align-items: center;
+  color: var(--big-text-color);
+  display: flex;
+  font-weight: 500;
+  gap: 0.5rem;
+}
+
+select {
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+}
+
+.select {
+  border: 1px solid var(--border-color);
+  border-radius: var(--btn-radius);
+  color: var(--border-color);
+  cursor: pointer;
+  font-weight: 200;
+  outline: none;
+  padding: 0.8rem;
+}
+
+input {
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+[type="button"] {
+  -webkit-appearance: button;
+  background-color: initial;
+  background-image: none;
+}
+
+.booking-btn {
+  background: var(--primary-color);
+  border: none;
+  border-radius: 0;
+  color: var(--white-text-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 2.5rem;
+}
+
+svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.input label span {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800,900,300i,400i,500i,600i,700i,800i,900i&display=swap");
+* {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  font-family: Rubik, sans-serif;
+}
+
+body {
+  line-height: inherit;
+  margin: 0;
+  background: #f8f8f8;
+  background: var(--body-color);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-variation-settings: normal;
+  line-height: 1.5;
+  tab-size: 4;
+}
+
+:root {
+  --body-color: #f8f8f8;
+  --primary-color: #ff4d30;
+  --bg-text-color: #000;
+  --white-text-color: #fff;
+  --primary-shadow: rgba(255, 83, 48, 0.35) 0px 10px 15px 0px;
+  --btn-radius: 3px;
+  --hover-color: #ff381a;
+  --hover-shadow: rgba(255, 83, 48, 0.7) 0px 10px 15px 0px;
+  --small-text-color: #706f7b;
+  --p-size: 1rem;
+  --h4-size: 1.4rem;
+}
+
+.max-w-\[1920px\] {
+  max-width: 1920px;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  max-width: 133rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 0.8rem;
+  width: 100%;
+  z-index: 100;
+}
+
+*,
+:after,
+:before {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+img {
+  display: block;
+  vertical-align: middle;
+  height: auto;
+  max-width: 100%;
+}
+
+.logo {
+  width: 9rem;
+}
+
+.footer-con {
+  align-items: center;
+  display: grid;
+  justify-items: end;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: auto;
+  padding-bottom: 5rem;
+  width: 90%;
+}
+
+.footer-section {
+  background: #fff;
+  padding-top: 5rem;
+  width: 100%;
+}
+
+.fb-2 {
+  padding-left: 2rem;
+}
+
+h3 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+.footer-box h3 {
+  font-size: var(--h4-size);
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+  color: var(--small-text-color);
+  font-size: var(--p-size);
+  font-weight: 400;
+  padding: 1.5rem 0;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+
+.footer-box.footer-box.fb-1 p {
+  max-width: 90%;
+}
+
+.fb-1 .span-flex {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer-box.footer-box.fb-1 span {
+  font-weight: 400;
+}
+
+.sf-2 {
+  margin-top: -2rem;
+}
+
+small {
+  font-size: 80%;
+}
+
+.footer-box.footer-box.fb-1 small {
+  color: var(--big-text-color);
+  font-size: 1rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fb-3 p {
+  color: var(--big-text-color);
+}
+
+svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.fb-1 .span-flex p {
+  color: var(--big-text-color);
+  font-weight: 500;
+  max-width: 100%;
+}
+
+.fb-2 a {
+  line-height: 2.7rem;
+}
+
+.fb-2 a:hover {
+  color: var(--primary-color);
+}

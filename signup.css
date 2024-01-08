@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800,900,300i,400i,500i,600i,700i,800i,900i&display=swap");
+* {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  font-family: Rubik, sans-serif;
+}
+
+body {
+  line-height: inherit;
+  margin: 0;
+  background: #f8f8f8;
+  background: var(--body-color);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-variation-settings: normal;
+  line-height: 1.5;
+  tab-size: 4;
+}
+
+:root {
+  --body-color: #f8f8f8;
+  --primary-color: #ff4d30;
+  --bg-text-color: #000;
+  --white-text-color: #fff;
+  --primary-shadow: rgba(255, 83, 48, 0.35) 0px 10px 15px 0px;
+  --btn-radius: 3px;
+  --hover-color: #ff381a;
+  --hover-shadow: rgba(255, 83, 48, 0.7) 0px 10px 15px 0px;
+}
+
+.max-w-\[1920px\] {
+  max-width: 1920px;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  max-width: 133rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 0.8rem;
+  width: 100%;
+  z-index: 100;
+}
+
+*,
+:after,
+:before {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Nav-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.openNav {
+  display: none;
+}
+
+.nav-btns {
+  display: flex;
+  gap: 0.7rem;
+}
+
+img {
+  display: block;
+  vertical-align: middle;
+  height: auto;
+  max-width: 100%;
+}
+
+.logo {
+  width: 9rem;
+}
+
+svg {
+  display: block;
+  vertical-align: middle;
+}
+
+button {
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  -webkit-appearance: button;
+  background-color: initial;
+  background-image: none;
+  cursor: pointer;
+}
+
+.nav-btns .nav-btn {
+  font-size: 1.05rem;
+  font-weight: 500;
+  padding: 0.8rem 2rem;
+}
+
+/* .nav-btns .nav-btn.sign-in:hover {
+  color: var(--primary-color);
+  transition: 0.2s;
+} */
+
+.nav-btns .nav-btn.register {
+  background: var(--primary-color);
+  border-radius: var(--btn-radius);
+  box-shadow: var(--primary-shadow);
+  color: var(--white-text-color);
+  transition: 2s;
+}
+.nav-btns .nav-btn {
+  background: var(--primary-color);
+  border-radius: var(--btn-radius);
+  box-shadow: var(--primary-shadow);
+  color: var(--white-text-color);
+  transition: 2s;
+}
+
+.nav-btns .nav-btn.register:hover {
+  background: var(--hover-color);
+  box-shadow: var(--hover-shadow);
+}
+
+.Nav-menu a {
+  color: var(--bg-text-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.Nav-menu a:hover {
+  color: var(--primary-color);
+}
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800,900,300i,400i,500i,600i,700i,800i,900i&display=swap");
+body {
+  /* CSS Variables that may have been missed get put on body */
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgba(0, 0, 0, 0.03))
+    drop-shadow(0 8px 5px rgba(0, 0, 0, 0.08));
+}
+
+* {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  font-family: Rubik, sans-serif;
+}
+
+.max-w-\[1920px\] {
+  max-width: 1920px;
+}
+
+.drop-shadow-xl {
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgba(0, 0, 0, 0.03))
+    drop-shadow(0 8px 5px rgba(0, 0, 0, 0.08));
+  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.booking-section {
+  background: #fff;
+  border-radius: 8px;
+  margin: auto;
+  width: 90%;
+}
+
+.relative {
+  position: relative;
+}
+
+body {
+  line-height: inherit;
+  margin: 0;
+  background: #f8f8f8;
+  background: var(--body-color);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-variation-settings: normal;
+  line-height: 1.5;
+  tab-size: 4;
+}
+
+:root {
+  --body-color: #f8f8f8;
+  --primary-color: #ff4d30;
+  --bg-text-color: #000;
+  --white-text-color: #fff;
+  --border-color: #ababab;
+  --btn-radius: 3px;
+  --h4-size: 1.4rem;
+}
+
+.booking-card {
+  background-image: url(https://carsrental.vercel.app/static/media/book-bg.6f629a1041e9fd9c6685.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+}
+
+*,
+:after,
+:before {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+.booking-phase {
+  margin: auto;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  width: 90%;
+}
+
+h2 {
+  font-size: xx-large;
+  font-weight: 700;
+  margin: auto;
+  max-width: 200px;
+  color: var(--bg-text-color);
+  margin-bottom: -1rem;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.form-phase {
+  display: flex;
+  gap: 2rem;
+  width: 32%;
+  flex-direction: column;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input label {
+  align-items: center;
+  color: var(--big-text-color);
+  display: flex;
+  font-weight: 500;
+  gap: 0.5rem;
+}
+
+select {
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+}
+
+.select {
+  border: 1px solid var(--border-color);
+  border-radius: var(--btn-radius);
+  color: var(--border-color);
+  cursor: pointer;
+  font-weight: 200;
+  outline: none;
+  padding: 0.8rem;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="password"] {
+  display: block;
+  margin-top: 7px;
+  height: 50px;
+  width: 620px;
+  border: none;
+  padding: 5px;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container input[type="checkbox"] {
+  order: -1; /* Move the checkbox to the beginning */
+  margin-right: 5px; /* Optional - Add spacing between checkbox and label */
+}
+
+input[type="number"] {
+  height: 150px; /* For weight input field */
+}
+
+[type="button"] {
+  -webkit-appearance: button;
+  background-color: initial;
+  background-image: none;
+}
+
+.booking-btn {
+  background: var(--primary-color);
+  border: none;
+  border-radius: 0;
+  color: var(--white-text-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 2.5rem;
+}
+
+svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.input label span {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+.snipcss0-2-2-3 {
+  /* margin-top: 1%; */
+  margin-bottom: 1%;
+}
+.snipcss0-5-24-25 {
+  margin-top: 10px;
+}

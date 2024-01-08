@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800,900,300i,400i,500i,600i,700i,800i,900i&display=swap");
+* {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  font-family: Rubik, sans-serif;
+}
+
+.wcu-flex {
+  display: flex;
+  padding-top: 2rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.wcu-container {
+  background: transparent;
+  margin: auto;
+  width: 90%;
+}
+
+.chooseUs-section {
+  background-image: url(https://carsrental.vercel.app/static/media/wcubg.82b3bf0dc76cd35f3da0.png);
+  background-position: 50%;
+  background-size: cover;
+  height: auto;
+  margin: auto;
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+body {
+  line-height: inherit;
+  margin: 0;
+  background: #f8f8f8;
+  background: var(--body-color);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-variation-settings: normal;
+  line-height: 1.5;
+  tab-size: 4;
+}
+
+:root {
+  --body-color: #f8f8f8;
+  --small-text-color: #706f7b;
+  --h4-size: 1.4rem;
+  --p-size: 1rem;
+}
+
+.right {
+  display: flex;
+  width: 43%;
+  flex-direction: column;
+}
+
+*,
+:after,
+:before {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+.right .wcu-box {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  position: relative;
+  left: 60%;
+}
+
+img {
+  display: block;
+  vertical-align: middle;
+  height: auto;
+  max-width: 100%;
+}
+
+.right .wcu-box img {
+  height: 7rem;
+  width: 7rem;
+}
+
+h3 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+.right .wcu-box h3 {
+  font-size: var(--h4-size);
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+  color: var(--small-text-color);
+  font-size: var(--p-size);
+  font-weight: 400;
+  padding: 1.5rem 0;
+  padding-bottom: 1rem;
+  text-align: left;
+}

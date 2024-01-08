@@ -1,0 +1,925 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800,900,300i,400i,500i,600i,700i,800i,900i&display=swap");
+* {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  font-family: Rubik, sans-serif;
+}
+
+body {
+  line-height: inherit;
+  margin: 0;
+  background: #f8f8f8;
+  background: var(--body-color);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-variation-settings: normal;
+  line-height: 1.5;
+  tab-size: 4;
+}
+
+:root {
+  --body-color: #f8f8f8;
+  --primary-color: #ff4d30;
+  --bg-text-color: #000;
+  --white-text-color: #fff;
+  --primary-shadow: rgba(255, 83, 48, 0.35) 0px 10px 15px 0px;
+  --btn-radius: 3px;
+  --hover-color: #ff381a;
+  --hover-shadow: rgba(255, 83, 48, 0.7) 0px 10px 15px 0px;
+}
+
+.max-w-\[1920px\] {
+  max-width: 1920px;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  max-width: 133rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 0.8rem;
+  width: 100%;
+  z-index: 100;
+}
+
+*,
+:after,
+:before {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Nav-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.openNav {
+  display: none;
+}
+
+.nav-btns {
+  display: flex;
+  gap: 0.7rem;
+}
+
+img {
+  display: block;
+  vertical-align: middle;
+  height: auto;
+  max-width: 100%;
+}
+
+.logo {
+  width: 9rem;
+}
+
+ul .nav-btns {
+  display: none;
+}
+
+svg {
+  display: block;
+  vertical-align: middle;
+}
+
+button {
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  -webkit-appearance: button;
+  background-color: initial;
+  background-image: none;
+  cursor: pointer;
+}
+
+.nav-btns .nav-btn {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.8rem 2rem;
+}
+
+/* .nav-btns .nav-btn.sign-in:hover {
+  color: var(--primary-color);
+  transition: 0.2s;
+} */
+
+.nav-btns .nav-btn.register {
+  background: var(--primary-color);
+  border-radius: var(--btn-radius);
+  box-shadow: var(--primary-shadow);
+  color: var(--white-text-color);
+  transition: 2s;
+}
+.nav-btns .nav-btn {
+  background: var(--primary-color);
+  border-radius: var(--btn-radius);
+  box-shadow: var(--primary-shadow);
+  color: var(--white-text-color);
+  transition: 2s;
+}
+.nav-btns .nav-btn {
+  background: var(--primary-color);
+  border-radius: var(--btn-radius);
+  box-shadow: var(--primary-shadow);
+  color: var(--white-text-color);
+  transition: 2s;
+}
+.nav-btns .nav-btn.register:hover {
+  background: var(--hover-color);
+  box-shadow: var(--hover-shadow);
+}
+
+.Nav-menu a {
+  color: var(--bg-text-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.Nav-menu a:hover {
+  color: var(--primary-color);
+}
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800,900,300i,400i,500i,600i,700i,800i,900i&display=swap");
+body {
+  /* CSS Variables that may have been missed get put on body */
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgba(0, 0, 0, 0.03))
+    drop-shadow(0 8px 5px rgba(0, 0, 0, 0.08));
+}
+
+* {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  font-family: Rubik, sans-serif;
+}
+
+.max-w-\[1920px\] {
+  max-width: 1920px;
+}
+
+.drop-shadow-xl {
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgba(0, 0, 0, 0.03))
+    drop-shadow(0 8px 5px rgba(0, 0, 0, 0.08));
+  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.booking-section {
+  background: #fff;
+  border-radius: 8px;
+  margin: auto;
+  width: 90%;
+}
+
+.relative {
+  position: relative;
+}
+
+body {
+  line-height: inherit;
+  margin: 0;
+  background: #f8f8f8;
+  background: var(--body-color);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-variation-settings: normal;
+  line-height: 1.5;
+  tab-size: 4;
+}
+
+:root {
+  --body-color: #f8f8f8;
+  --primary-color: #ff4d30;
+  --bg-text-color: #000;
+  --white-text-color: #fff;
+  --border-color: #ababab;
+  --btn-radius: 3px;
+  --h4-size: 1.4rem;
+}
+
+.booking-card {
+  background-image: url(https://carsrental.vercel.app/static/media/book-bg.6f629a1041e9fd9c6685.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+}
+
+*,
+:after,
+:before {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+.booking-phase {
+  margin: auto;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  width: 90%;
+}
+
+h2 {
+  font-size: var(--h4-size);
+  font-weight: 700;
+  margin: 0;
+  color: var(--bg-text-color);
+  margin-bottom: -1rem;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+/* 
+.form {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+} */
+
+.form-phase {
+  display: flex;
+  gap: 2rem;
+  width: 32%;
+  flex-direction: column;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input label {
+  align-items: center;
+  color: var(--big-text-color);
+  display: flex;
+  font-weight: 500;
+  gap: 0.5rem;
+}
+
+select {
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+}
+
+.select {
+  border: 1px solid var(--border-color);
+  border-radius: var(--btn-radius);
+  color: var(--border-color);
+  cursor: pointer;
+  font-weight: 200;
+  outline: none;
+  padding: 0.8rem;
+}
+
+input {
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+[type="button"] {
+  -webkit-appearance: button;
+  background-color: initial;
+  background-image: none;
+}
+
+.booking-btn {
+  background: var(--primary-color);
+  border: none;
+  border-radius: 0;
+  color: var(--white-text-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 2.5rem;
+}
+
+svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.input label span {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800,900,300i,400i,500i,600i,700i,800i,900i&display=swap");
+* {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  font-family: Rubik, sans-serif;
+}
+
+body {
+  line-height: inherit;
+  margin: 0;
+  background: #f8f8f8;
+  background: var(--body-color);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-variation-settings: normal;
+  line-height: 1.5;
+  tab-size: 4;
+}
+
+:root {
+  --body-color: #f8f8f8;
+  --primary-color: #ff4d30;
+  --bg-text-color: #000;
+  --h3-size: 2.4rem;
+  --h4-size: 1.4rem;
+  --p-size: 1rem;
+}
+
+.max-w-\[1920px\] {
+  max-width: 1920px;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  max-width: 133rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 0.8rem;
+  width: 100%;
+  z-index: 100;
+}
+
+*,
+:after,
+:before {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+img {
+  display: block;
+  vertical-align: middle;
+  height: auto;
+  max-width: 100%;
+}
+
+.logo {
+  width: 9rem;
+}
+
+.breadcrumb {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 7%;
+  width: 90%;
+}
+
+.heroimage-sec {
+  height: 40vh;
+  width: 100%;
+}
+
+h2 {
+  font-size: var(--h4-size);
+  font-weight: 700;
+  margin: 0;
+  color: var(--bg-text-color);
+  margin-bottom: -1rem;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+
+.breadcrumb h2 {
+  font-size: var(--h3-size);
+}
+
+h4 {
+  font-size: var(--h4-size);
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 0.7rem;
+  color: var(--bg-text-color);
+}
+
+.breadcrumb h4 {
+  color: var(--big-text-color);
+  font-size: var(--p-size);
+  font-weight: 400;
+}
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800,900,300i,400i,500i,600i,700i,800i,900i&display=swap");
+* {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  font-family: Rubik, sans-serif;
+}
+
+body {
+  line-height: inherit;
+  margin: 0;
+  background: #f8f8f8;
+  background: var(--body-color);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-variation-settings: normal;
+  line-height: 1.5;
+  tab-size: 4;
+}
+
+:root {
+  --body-color: #f8f8f8;
+  --primary-color: #ff4d30;
+  --bg-text-color: #000;
+  --small-text-color: #706f7b;
+  --border-color: #ababab;
+  --primary-shadow: rgba(255, 83, 48, 0.35) 0px 10px 15px 0px;
+  --btn-radius: 3px;
+  --hover-color: #ff381a;
+  --h4-size: 1.4rem;
+  --p-size: 1rem;
+  --special-size: 1.2rem;
+}
+
+.max-w-\[1920px\] {
+  max-width: 1920px;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  max-width: 133rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 0.8rem;
+  width: 100%;
+  z-index: 100;
+}
+
+*,
+:after,
+:before {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.models-con {
+  grid-gap: 2rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  width: 80%;
+}
+
+.models-sec {
+  background: #fff;
+  padding-bottom: 5rem;
+  padding-top: 6rem;
+  width: 100%;
+}
+
+.model-box {
+  border: 0px solid var(--border-color);
+  padding-bottom: 2rem;
+  width: 22rem;
+  background-color: #e2e2e2;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+img {
+  display: block;
+  vertical-align: middle;
+  height: auto;
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.logo {
+  width: 9rem;
+}
+
+.model-btm {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  position: relative;
+}
+
+.model-btm:before {
+  background: var(--border-color);
+  bottom: 1rem;
+  content: "";
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+button {
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  -webkit-appearance: button;
+  background-color: initial;
+  background-image: none;
+  cursor: pointer;
+}
+
+.mbr-btn {
+  align-items: center;
+  background: var(--primary-color);
+  border-radius: var(--btn-radius);
+  box-shadow: var(--primary-shadow);
+  color: #fff;
+  display: flex;
+  font-size: var(--special-size);
+  font-weight: 700;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem;
+  width: 86%;
+}
+
+.mbr-btn:hover {
+  background: var(--hover-color);
+}
+
+.model-box img {
+  height: 17rem;
+  width: 22rem;
+}
+
+h4 {
+  font-size: var(--h4-size);
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 0.7rem;
+  color: var(--bg-text-color);
+}
+
+.breadcrumb h4 {
+  color: var(--big-text-color);
+  font-size: var(--p-size);
+  font-weight: 400;
+}
+
+.breadcrumb {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 1%;
+  width: 90%;
+}
+
+.heroimage-sec {
+  height: 20vh;
+  width: 100%;
+}
+
+.model-btm .type {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  height: 3rem;
+  margin-top: 1rem;
+}
+
+.model-btm .transM {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  height: 3rem;
+  margin-top: 1rem;
+}
+
+h3 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+.model-btm h3 {
+  color: var(--big-text-color);
+  font-size: var(--h4-size);
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+  color: var(--small-text-color);
+  font-size: var(--p-size);
+  font-weight: 400;
+  padding: 1.5rem 0;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+
+.mdl-right .perDay {
+  color: var(--big-text-color);
+  padding-top: 0.4rem;
+}
+
+.stars {
+  display: flex;
+  gap: 0.2rem;
+  padding-top: 1rem;
+}
+
+svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.model-btm .type p {
+  color: var(--small-text-color);
+  font-weight: 500;
+}
+
+.model-btm .transM p {
+  color: var(--small-text-color);
+  font-weight: 500;
+}
+a:hover {
+  color: #ff381a;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800,900,300i,400i,500i,600i,700i,800i,900i&display=swap");
+* {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  font-family: Rubik, sans-serif;
+}
+
+body {
+  line-height: inherit;
+  margin: 0;
+  background: #f8f8f8;
+  background: var(--body-color);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-variation-settings: normal;
+  line-height: 1.5;
+  tab-size: 4;
+}
+
+:root {
+  --body-color: #f8f8f8;
+  --primary-color: #ff4d30;
+  --small-text-color: #706f7b;
+  --p-size: 1rem;
+  --initial-bg: #e9e9e9;
+  --h4-size: 1.4rem;
+}
+
+.footer-section {
+  background: #fff;
+  padding-top: 5rem;
+  width: 100%;
+}
+
+*,
+:after,
+:before {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+.footer-con {
+  align-items: center;
+  display: grid;
+  justify-items: end;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: auto;
+  padding-bottom: 5rem;
+  width: 90%;
+}
+
+.fb-2 {
+  padding-left: 2rem;
+}
+
+h3 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+.footer-box h3 {
+  font-size: var(--h4-size);
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+  color: var(--small-text-color);
+  font-size: var(--p-size);
+  font-weight: 400;
+  padding: 1.5rem 0;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+
+.footer-box.footer-box.fb-1 p {
+  max-width: 90%;
+}
+
+.fb-1 .span-flex {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer-box.footer-box.fb-1 span {
+  font-weight: 400;
+}
+
+.sf-2 {
+  margin-top: -2rem;
+}
+
+small {
+  font-size: 80%;
+}
+
+.footer-box.footer-box.fb-1 small {
+  color: var(--big-text-color);
+  font-size: 1rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fb-3 p {
+  color: var(--big-text-color);
+}
+
+.fb-4 p {
+  color: var(--big-text-color);
+}
+
+input {
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.fb-4 input {
+  background: none repeat 0 0 / auto auto padding-box border-box scroll-bg;
+  background: var();
+  background: var(--initial-bg);
+  outline: none;
+  padding: 0.8rem;
+  width: 90%;
+}
+
+button {
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  -webkit-appearance: button;
+  background-color: initial;
+  background-image: none;
+  cursor: pointer;
+}
+
+.fb-4 .sub-btn {
+  background: var(--primary-color);
+  color: #fff;
+  font-size: var(--h4-size);
+  font-weight: 500;
+  margin-top: 0.6rem;
+  padding: 0.8rem;
+  width: 90%;
+}
+
+svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.fb-1 .span-flex p {
+  color: var(--big-text-color);
+  font-weight: 500;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.fb-2 a {
+  line-height: 2.7rem;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+.fb-2 a:hover {
+  color: var(--primary-color);
+}
